@@ -13,7 +13,7 @@ class PageController extends Controller
         return Inertia::render('Dashboard');    # code...
     }
     
-     public function index(){
+    public function index(){
         return Inertia::render('Welcome', [
             'canLogin' => Route::has('login'),
             'canRegister' => Route::has('register'),
